@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Covid Tracker</title>
+    <script src="JS/Chart.js"></script>
+</head>
+
+<body>
+    <div class="site-main-wrapper">
+        <div id="mobile">
+            <div class="hem-btn">
+                <h4 class="heading">Covid Tracker</h4>
+                <button class="hamberger">
+                    <i class="fa-3x fas fa-bars"></i>
+                </button>
+                <div class="mob-nav">
+                    <h4 class="heading">Covid Tracker</h4>
+                    <i id="close-btn" class="fa-3x fas fa-times"></i>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://practice.geeksforgeeks.org/?ref=ghm">Syptoms</a></li>
+                        <li><a href="#">Preventions</a></li>
+                    </ul>
+                    <div class="buttonIn">
+                        <input type="text" id="inp" placeholder="Search">
+                        <button id="btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navbar">
+            <div>
+                <h4 class="heading">Covid Tracker</h4>
+                <a href="#">Home</a>
+                <a href="#">Syptoms</a>
+                <a href="#">Preventions</a>
+            </div>
+            <div class="buttonIn">
+                <input type="text" id="inp" placeholder="Search">
+                <button id="btn">Search</button>
+            </div>
+        </div>
+        <div class="head1">
+            <h1>C</h1>
+            <img id="responsive" src="img/corona.png" alt="Corona Image">
+            <h1>VID TRACKER</h1>
+        </div>
+        <div class="preImage">
+            <img id="preventImage" src="img/prevent.png" alt="Prevention Image">
+        </div>
+        <div id="quote">
+            <h1 class="typewriter-text"></h1>
+        </div>
+        <div id="CASECARD">
+            <div class="card">
+                <h3 class="caw">Cases Across India</h3>
+                <p id="totalCasesInIndia" class="totalCases"></p>
+                <p class="activeCases">Active Cases</p>
+                <div class="innercard">
+                    <div class="totalcasesworldcard">
+                        <p class="totalcases">TOTAL CASES</p>
+                        <div id="totalcases2"></div>
+                        <div id="todayCases2"></div>
+                    </div>
+                    <div class="totaldeathsworldcard">
+                        <p class="totaldeaths">DEATHS</p>
+                        <div id="totaldeaths2"></div>
+                        <div id="todayDeaths2"></div>
+                    </div>
+                    <div class="totalrecoveredworldcard">
+                        <p class="totalrecovered">RECOVERED</p>
+                        <div id="totalrecovered2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="caw" id="caw1">Cases Across State</h3>
+                <p id="totalCasesInState" class="totalCases"></p>
+                <p class="activeCases">Active Cases</p>
+                <div class="innercard">
+                    <div class="totalcasesworldcard">
+                        <p class="totalcases">TOTAL CASES</p>
+                        <div id="totalcases1"></div>
+                        <div id="todayCases"></div>
+                    </div>
+                    <div class="totaldeathsworldcard">
+                        <p class="totaldeaths">DEATHS</p>
+                        <div id="totaldeaths1"></div>
+                        <div id="todayDeaths"></div>
+                    </div>
+                    <div class="totalrecoveredworldcard">
+                        <p class="totalrecovered">RECOVERED</p>
+                        <div id="totalrecovered1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <h3 id="covidUpdate">COVID-19 LIVE UPDATES OF THE STATES</h3>
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Total Cases</th>
+                        <th>Active Cases</th>
+                        <th>Deaths</th>
+                        <th>Recovered</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+            <div id="chart">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/84059f4353.js" crossorigin="anonymous"></script>
+    <script src="JS/coronatracker.js"></script>
+</body>
+
+</html>

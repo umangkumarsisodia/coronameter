@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Besley', serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border: 1px solid #000000c4;
+    background-color: #000000c4;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .buttonIn {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.heading {
+    color: white;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.5rem;
+}
+
+#navbar a {
+    color: white;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    text-decoration: none;
+    padding: 0 22px 0 22px;
+    font-size: 1.2rem;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+.head1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.preImage {
+    text-align: center;
+}
+
+#preventImage {
+    display: block;
+    margin: 32px auto;
+    height: 60vh;
+    animation: zoom-in-zoom-out 8s infinite linear;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#quote {
+    margin: 34px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#responsive {
+    display: block;
+    height: 13vh;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#CASECARD {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 44vw;
+    height: 38vh;
+    text-align: center;
+    border: 1px solid #3ba8f6;
+    background-color: #bef3fc;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.caw {
+    font-size: 2.5rem;
+}
+
+.totalCases {
+    font-size: 2rem;
+    color: blue;
+    margin: 10px;
+}
+
+.activeCases {
+    border-top: 1px solid black;
+    font-size: 1rem;
+}
+
+.innercard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 17px;
+}
+
+.totalcasesworldcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 12vh;
+    text-align: center;
+    border: 1px solid #ef6c00;
+    background-color: #f9ba5e;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.totaldeathsworldcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 12vh;
+    text-align: center;
+    border: 1px solid #ff2b1c;
+    background-color: #fe7167;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.totalrecoveredworldcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 12vh;
+    text-align: center;
+    border: 1px solid #4c8a06;
+    background-color: #adee64;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#todayCases,
+#todayDeaths,
+#todayCases2,
+#todayDeaths2 {
+    color: rgb(192, 7, 7);
+}
+
+.totalcases {
+    color: hsl(27, 89%, 44%);
+}
+
+.totaldeaths {
+    color: #db1e10;
+}
+
+.totalrecovered {
+    color: #437906;
+}
+
+#totalcases1,
+#totaldeaths1,
+#totalrecovered1,
+#totalcases2,
+#totaldeaths2,
+#totalrecovered2 {
+    margin-top: 21px;
+    font-size: 1.5rem;
+}
+
+#table {
+    display: flex;
+    /* margin: 10px 0 10px 64px; */
+    justify-content: center;
+    overflow: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    width: 46vw;
+}
+
+#table thead {
+    background-color: #312f2f;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.bgcyan {
+    background-color: #a8fcfc;
+}
+
+.bgorange {
+    background-color: #ff895d;
+}
+
+.bgyellow {
+    background-color: #ffff68;
+}
+
+.bgred {
+    background-color: #ff5d5d;
+}
+
+.bggreen {
+    background-color: #1fd91f;
+}
+
+#inp {
+    color: black;
+    height: 5vh;
+    border: 2px solid green;
+    margin-right: 12px;
+    border-radius: 9px;
+    width: 14vw;
+    outline: none;
+    padding-left: 14px;
+    font-size: 1rem;
+}
+
+#btn {
+    border-radius: 21px;
+    background: #00000012;
+    color: green;
+    font-size: 1.5rem;
+    padding: 8px 8px;
+    outline: none;
+    border: 2px solid green;
+    cursor: pointer;
+    margin-right:12px;
+}
+
+#btn:hover {
+    background: green;
+    color: white;
+}
+
+#btn:active {
+    border: 5px solid green;
+}
+
+#chart {
+    width: 46vw;
+    height: 10vh;
+    margin: 10px;
+}
+
+#covidUpdate {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+@media screen and (min-width:941px) {
+    #mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:940px) {
+    #navbar {
+        display: none;
+    }
+
+    .site-main-wrapper{
+        position: relative;
+    }
+
+    .hem-btn {
+        border: 1px solid #000000c4;
+        background-color: #000000c4;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamberger{
+        position: absolute;
+        right: 40px;
+        cursor: pointer;
+        background: none;
+        border:none;
+        color: white;
+    }
+    
+    .mob-nav {
+        position: fixed;
+        background-color: black;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: .5s ease;
+    }
+    
+    .open {
+        transform: translateX(0);
+    }
+
+    .close {
+        transform: translateX(-100%);
+    }
+
+    .mob-nav ul {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+
+    .mob-nav ul li {
+        list-style: none;
+        padding: 0.5rem 0;
+    }
+
+    .mob-nav ul li a {
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    #inp{
+        color: black;
+        border: 2px solid green;
+        margin-right: 12px;
+        border-radius: 9px;
+        width: 42vw;
+        outline: none;
+        font-size: 1rem;
+        padding: 0 10px;
+        margin-left: 29px;
+    }
+
+    #btn {
+        padding: 16px 26px;
+    }
+    .mob-nav #close-btn {
+        position: absolute;
+        color: white;
+        background: none;
+        border: none;
+        right:40px;
+        top:40px;
+        cursor: pointer;
+    }
+
+    .mob-nav h4 {
+        margin:2rem 0 2.5rem 0;
+    }
+}
+
+@media screen and (max-width:940px){
+    .head1 {
+        font-size: 1rem;
+    }
+
+    #responsive {
+        height:5vh;
+    }
+
+    #preventImage {
+        height: 45vh;
+    }
+
+    #quote {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 35vw;
+    }
+
+    #CASECARD {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caw {
+        font-size: 1.5rem;
+    }
+
+    .totalCases{
+        font-size: 1.5rem;
+    }
+
+    .activeCases{
+        font-size: 1.5rem;
+    }
+
+    #totalcases1, #totaldeaths1, #totalrecovered1, #totalcases2, #totaldeaths2, #totalrecovered2 {
+        margin-top: 21px;
+        font-size: 0.5rem;
+    }
+
+    #table {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:923px) {
+    .innercard {
+        flex-direction: column;
+    }
+
+    .card {
+        height:71vh;
+    }
+
+    #totalcases1, #totaldeaths1, #totalrecovered1, #totalcases2, #totaldeaths2, #totalrecovered2 {
+        font-size: 1rem;
+    }
+
+    #covidUpdate {
+        font-size: 1rem;
+    }
+
+    #table thead {
+        font-size: 1rem;
+    }
+} 
+
+@media screen and (max-width:875px) {
+    .totalcases,.totaldeaths, .totalrecovered {
+        font-size: 0.5rem;
+    }
+    #totalcases1, #totaldeaths1, #totalrecovered1, #totalcases2, #totaldeaths2, #totalrecovered2 {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:875px) {
+    .caw {
+        font-size: 1rem;
+    }
+
+    .totalCases {
+        font-size: 1rem;
+    }
+
+    .activeCases {
+        font-size: 1rem;
+    }
+
+    #table thead {
+        font-size: 0.5rem;
+    }
+
+    #tableBody {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:587px) {
+    .head {
+        font-size: 1rem;
+    }
+
+    #preventImage {
+        height: 22vh;
+    }
+    #table thead {
+        font-size: 0.3rem;
+    }
+
+    #tableBody {
+        font-size: 0.3rem;
+    }
+}
+
+@media screen and (max-width:373px) {
+    .caw, .activeCases, .totalCases {
+        font-size: 0.5rem;
+    }
+
+    .card {
+        height: 49vh;
+    }
+
+    .totalcasesworldcard, .totaldeathsworldcard, .totalrecoveredworldcard {
+            height: 5vh;
+    }
+
+    .totalcases, .totaldeaths, .totalrecovered {
+        font-size: 0.3rem;
+    }
+} 
